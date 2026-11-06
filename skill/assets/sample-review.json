@@ -1,0 +1,58 @@
+{
+  "facts": [
+    {
+      "row": 1,
+      "identity": "blue water bottle",
+      "metrics": {
+        "ctr": 0.015,
+        "cpc": 0.5,
+        "cvr": 0.1111111111111111,
+        "acos": 0.2,
+        "roas": 5.0,
+        "budget_utilization": 0.9
+      }
+    },
+    {
+      "row": 2,
+      "identity": "red bottle replacement lid",
+      "metrics": {
+        "ctr": 0.01125,
+        "cpc": 0.8,
+        "cvr": 0.0,
+        "acos": null,
+        "roas": 0.0,
+        "budget_utilization": 0.36
+      }
+    }
+  ],
+  "rule_hits": [
+    {
+      "row": 1,
+      "rule": "budget_near_cap_and_at_target",
+      "action": "candidate_budget_increase_10_percent",
+      "status": "需要人工确认"
+    },
+    {
+      "row": 1,
+      "rule": "converting_query_harvest_candidate",
+      "action": "candidate_exact_or_phrase_harvest",
+      "status": "需要人工确认"
+    },
+    {
+      "row": 2,
+      "rule": "spend_without_orders_review",
+      "action": "inspect_query_fit_before_negative",
+      "status": "需要人工确认"
+    }
+  ],
+  "unknowns": [],
+  "data_quality": {
+    "status": "pass",
+    "row_count": 2
+  },
+  "review": {
+    "mode": "all",
+    "source_path": "H:\\直播人\\crossborder-amazon-ads-skill\\crossborder-amazon-ads\\assets\\sample-report.csv",
+    "target_acos": 0.3
+  }
+}
