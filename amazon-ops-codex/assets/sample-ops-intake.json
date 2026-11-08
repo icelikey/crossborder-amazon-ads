@@ -1,0 +1,20 @@
+{
+  "run_id": "demo-2026-11-08-us-weekly",
+  "account_alias": "demo-brand-us",
+  "marketplace": "US",
+  "currency": "USD",
+  "timezone": "America/Los_Angeles",
+  "date_range": {
+    "start": "2026-11-01",
+    "end": "2026-11-07"
+  },
+  "attribution_window": "same as export",
+  "business_goal": "validate",
+  "inventory_status": "待确认",
+  "report_paths": [
+    "campaign-report.csv",
+    "search-term-report.csv"
+  ],
+  "authorized_actions": "proposal_only",
+  "owner": "growth-ops"
+}

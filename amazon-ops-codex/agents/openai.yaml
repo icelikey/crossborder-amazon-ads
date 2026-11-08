@@ -1,0 +1,4 @@
+interface:
+  display_name: "Amazon Ops with Codex"
+  short_description: "Run auditable Amazon operations with Codex"
+  default_prompt: "Use $amazon-ops-codex to turn my Amazon exports into a daily or weekly operating brief."
